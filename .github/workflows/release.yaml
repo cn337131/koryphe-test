@@ -29,7 +29,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         ref: master
-        token: ${{ secrets.ADMIN_GITHUB_TOKEN }}
+        token: ${{ github.token }}
         fetch-depth: 0
 
     - name: Set up Github credentials
@@ -52,7 +52,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         ref: master
-        token: ${{ secrets.ADMIN_GITHUB_TOKEN }}
+        token: ${{ github.token }}
 
     - name: Set up Github credentials
       run: |
@@ -133,7 +133,7 @@ jobs:
     - name: Create release notes
       uses: softprops/action-gh-release@v2
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ github.token }}
       with:
         tag_name: ${{ env.artifactId }}-${{ env.RELEASE_VERSION }}
         name: Koryphe ${{ env.RELEASE_VERSION }}
@@ -148,7 +148,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         ref: develop
-        token: ${{ secrets.ADMIN_GITHUB_TOKEN }}
+        token: ${{ github.token }}
         fetch-depth: 0
 
     - name: Set up Github credentials
