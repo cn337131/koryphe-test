@@ -20,6 +20,7 @@
         <artifactId>koryphe</artifactId>
         <groupId>uk.gov.gchq.koryphe</groupId>
         <version>2.8.0</version>
+
     </parent>
     <packaging>jar</packaging>
     <modelVersion>4.0.0</modelVersion>
