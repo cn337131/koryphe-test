@@ -1,0 +1,23 @@
+changelog:
+  categories:
+    - title: ":star: Headliners"
+      labels:
+        - headliner
+    - title: ":gift: New Features"
+      labels:
+        - feature
+    - title: ":sparkles: Enhancements"
+      labels:
+        - enhancement
+    - title: ":beetle: Bugs Fixed"
+      labels:
+        - bug
+    - title: ":book: Documentation"
+      labels:
+        - documentation
+    - title: ":robot: Automation"
+      labels:
+        - automation
+    - title: Other changes
+      labels:
+        - "*"
